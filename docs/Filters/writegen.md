@@ -15,7 +15,7 @@ The writegen filter should usually not be explicitly loaded without a source ID 
 <a id="exporter">__exporter__</a> (bool, default: _false_): compatibility with old exporter, displays export results  
 </div>  
 <div markdown class="option">  
-<a id="pfmt" data-level="basic">__pfmt__</a> (pfmt, default: _none_, Enum: none|yuv420|yvu420|yuv420_10|yuv422|yuv422_10|yuv444|yuv444_10|uyvy|vyuy|yuyv|yvyu|uyvl|vyul|yuyl|yvyl|nv12|nv21|nv1l|nv2l|yuva|yuvd|yuv444a|yuv444p|v308|yuv444ap|v408|v410|v210|grey|algr|gral|rgb4|rgb5|rgb6|rgba|argb|bgra|abgr|rgb|bgr|xrgb|rgbx|xbgr|bgrx|rgbd|rgbds|uncv): pixel format for raw extract. If not set, derived from extension  
+<a id="pfmt" data-level="basic">__pfmt__</a> (pfmt, default: _none_, Enum: none|yuv420|yvu420|yuv420_10|yuv422|yuv422_10|yuv444|yuv444_10|uyvy|vyuy|yuyv|yvyu|uyvl|vyul|yuyl|yvyl|nv12|nv21|nv1l|nv2l|yuva|yuvd|yuv444a|yuv444p|v308|yuv444ap|v408|v410|v210|grey|algr|gral|rgb8|rgb4|rgb5|rgb6|rgba|argb|bgra|abgr|rgb|bgr|xrgb|rgbx|xbgr|bgrx|rgbd|rgbds|uncv): pixel format for raw extract. If not set, derived from extension  
 </div>  
   
 <div markdown class="option">  
@@ -59,5 +59,8 @@ The writegen filter should usually not be explicitly loaded without a source ID 
   
 <div markdown class="option">  
 <a id="add_nl" data-level="basic">__add_nl__</a> (bool, default: _false_): add new line after each packet when dumping text streams  
+</div>  
+<div markdown class="option">  
+<a id="rawb">__rawb__</a> (bool, default: _false_): force direct dump of input without framing rewrite. In this mode, all codec types are supported  
 </div>  
   

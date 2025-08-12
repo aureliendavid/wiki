@@ -287,6 +287,8 @@ nav:
         - CryptFile output: Filters/cryptout.md
       - Bitstream Framing:
         - AC3 reframer: Filters/rfac3.md
+        - AC4 reframer: Filters/rfac4.md
+        - AC4 writer: Filters/ufac4.md
         - ADTS reframer: Filters/rfadts.md
         - ADTS rewriter: Filters/ufadts.md
         - AMR/EVRC reframer: Filters/rfamr.md
@@ -344,6 +346,7 @@ nav:
         - MPEG-4 OD: Filters/odfdec.md
         - MediaCodec: Filters/mcdec.md
         - NVidia: Filters/nvdec.md
+        - OpenHEVC: Filters/ohevcdec.md
         - OpenJPEG2000: Filters/j2kdec.md
         - OpenSVC: Filters/osvcdec.md
         - PNG/JPG: Filters/imgdec.md

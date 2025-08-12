@@ -356,6 +356,9 @@ Fake | bool | D | Indicate a stream present in the source but not delivered as a
 ContentLightLevel | mem | DP | Content light level, payload of clli box (see ISO/IEC 14496-12), can be set as a list of 2 integers in fragment declaration (e.g. "=max_cll,max_pic_avg_ll") | CLLP    
 MasterDisplayColour | mem | DP | Master display colour info, payload of mdcv box (see ISO/IEC 14496-12), can be set as a list of 10 integers in fragment declaration (e.g. "=dpx0,dpy0,dpx1,dpy1,dpx2,dpy2,wpx,wpy,max,min") | MDCP    
 SEILoaded | bool | DP | indicate that packet has SEI/inband data in its properties | SEIP    
+OriginalPTS | luint | DP | indicate original PTS or PCR when remapping M2TS PCR | OPTS    
+OriginalDTS | luint | DP | indicate original DTS when remapping M2TS PCR | ODTS    
+MABRBaseURLs | strl | D | optionnal URLs for MABR - if first is `none`source server is not declared as repair server | MABU    
 
 # Pixel formats  
   
@@ -392,6 +395,7 @@ v210 | v210 | v210 | Packed UYVY 422 10 bit LE
 grey | grey |  | Greyscale 8 bit    
 algr | algr |  | Alpha+Grey 8 bit    
 gral | gral |  | Grey+Alpha 8 bit    
+rgb8 | rgb8 |  | RGB 332, 8 bits / pixel    
 rgb4 | rgb4 |  | RGB 444, 12 bits (16 stored) / pixel    
 rgb5 | rgb5 |  | RGB 555, 15 bits (16 stored) / pixel    
 rgb6 | rgb6 |  | RGB 555, 16 bits / pixel    
@@ -509,6 +513,7 @@ vc1 | SMPTE VC-1 Video
 dirac | Dirac Video    
 ac3 | AC3 Audio    
 eac3 | Enhanced AC3 Audio    
+ac4 | AC4 Audio    
 mlp | Dolby TrueHD    
 dra | DRA Audio    
 g719 | G719 Audio    
@@ -728,6 +733,7 @@ mp1 | rfmp3 | writegen | audio/mp3 audio/x-mp3
 ac3 | rfac3 | writegen | audio/ac3   
 eac3 | rfac3 | writegen | audio/eac3   
 ec3 | rfac3 | n/a | audio/x-ac3 audio/ac3 audio/x-eac3 audio/eac3   
+ac4 | rfac4 | writegen | audio/x-ac4 audio/ac4   
 amr | rfamr | writegen | audio/amr   
 awb | rfamr | writegen | audio/amr   
 evc | rfamr | writegen | audio/x-evc   
@@ -823,6 +829,7 @@ v210 | rfrawvid | writegen | video/x-raw
 grey | rfrawvid | writegen | video/x-raw   
 algr | rfrawvid | writegen | video/x-raw   
 gral | rfrawvid | writegen | video/x-raw   
+rgb8 | rfrawvid | writegen | video/x-raw   
 rgb4 | rfrawvid | writegen | video/x-raw   
 rgb5 | rfrawvid | writegen | video/x-raw   
 rgb6 | rfrawvid | writegen | video/x-raw   

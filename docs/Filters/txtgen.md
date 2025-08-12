@@ -21,7 +21,7 @@ When [rt](#rt) is set to true, the filter will generate text in real-time. If se
 # Options  {.no-collapse}  
   
 <div markdown class="option">  
-<a id="src" data-level="basic">__src__</a> (str, default: _/usr/share/gpac/scripts/jsf/txtgen//lipsum.txt_): source of text. If not set, the filter will use lorem ipsum text  
+<a id="src" data-level="basic">__src__</a> (str, default: _/usr/share/gpac/scripts/jsf/txtgen/lipsum.txt_): source of text. If not set, the filter will use lorem ipsum text  
 </div>  
 <div markdown class="option">  
 <a id="type" data-level="basic">__type__</a> (enum, default: _txt_): type of text to generate  
